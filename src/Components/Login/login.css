@@ -1,0 +1,105 @@
+/* General styling for the login modal */
+.login {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loginCart {
+    width: 40%;
+    background-color: black;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 8px white;
+  }
+  
+  /* Login title styling */
+  .loginTitle {
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  /* Credentials input area */
+  .loginCredential {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    margin-top: 25px;
+  }
+  
+  .usernameLogin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .usernameLoginInput {
+    width: 80%;
+    height: 45px;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #222;
+    color: white;
+  }
+  
+  /* Button styling */
+  .LoginBtn {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .login_btn {
+    width: 30%;
+    border: 1px solid white;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login_btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .loginCart {
+      width: 80%;  /* Adjust modal width on smaller screens */
+      padding: 20px;
+    }
+  
+    .loginTitle {
+      font-size: 28px;
+    }
+  
+    .usernameLoginInput {
+      width: 100%;
+      height: 40px;
+    }
+  
+    .login_btn {
+      font-size: 16px;
+    }
+  }
+  

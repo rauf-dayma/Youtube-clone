@@ -1,0 +1,143 @@
+.signup {
+    margin-top: 56px;
+    width: 100%;
+    height: 93.5vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+  }
+  
+  .signupCart {
+    width: 40%;
+    margin-top: 30px;
+    background-color: black;
+    padding: 15px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5px 0.5px 8px white;
+  }
+  
+  .signupTitle {
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .loginCredential {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin-top: 25px;
+  }
+  
+  .usernameLogin {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .usernameLoginInput {
+    width: 60%;
+    height: 45px;
+    color: white;
+    padding: 0 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #222222;
+  }
+  
+  .LoginBtn {
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .login_btn {
+    width: 30%;
+    border: 1px solid;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login_btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .imageUploadSignup {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .imageUploadSignupDiv {
+    height: 100px;
+    width: 100px;
+  }
+  
+  .imageDefaulSigup {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .signupCart {
+      width: 80%;
+    }
+  
+    .usernameLoginInput, .LoginBtn {
+      width: 80%;
+    }
+  
+    .login_btn {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .signupCart {
+      width: 80%;
+      padding: 10px 20px;
+    }
+  
+    .signupTitle {
+      font-size: 28px;
+    }
+  
+    .usernameLoginInput, .LoginBtn , input{
+      width: 80%;
+    }
+  
+    .login_btn {
+      width: 40%;
+    }
+  
+    .imageUploadSignupDiv {
+      height: 80px;
+      width: 80px;
+    }
+  
+    .imageDefaulSigup {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  

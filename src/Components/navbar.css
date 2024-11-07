@@ -1,0 +1,308 @@
+/* General Navbar */
+.navBar {
+    width: 100%;
+    height: 56px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+/* Left Section */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbarHamberger {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar_youtubeImg {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar_youtube_image {
+    color: red;
+}
+
+.navbar_UtubeTitle {
+    font-size: 22px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+/* Middle Section */
+.navbar-middle {
+    display: flex;
+    gap: 10px;
+    width: 50%;
+}
+
+.navbar-searchBox {
+    flex-grow: 1;
+    display: flex;
+}
+
+.navbar_searchboxInput {
+    width: 100%;
+    height: 38px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid rgb(58, 57, 57);
+    background-color: #121212;
+    color: white;
+    padding-left: 15px;
+}
+
+.serchIconBox {
+    cursor: pointer;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 42, 42);
+    border-radius: 0 20px 20px 0;
+}
+
+.navbar_mic {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Right Section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar_right_logo {
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navbar_model {
+    position: absolute;
+    top: 45px;
+    width: 120px;
+    background-color: rgb(85, 85, 85);
+    z-index: 20;
+    color: white;
+}
+
+.navbar_model_option {
+    padding: 10px;
+    cursor: pointer;
+    &:hover {
+        background-color: rgb(34, 33, 33);
+    }
+}
+
+/* General Navbar */
+.navBar {
+    width: 100%;
+    height: 56px;
+    padding: 8px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    background-color: black;
+    z-index: 10;
+    box-sizing: border-box;
+}
+
+/* Left Section */
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbarHamberger {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.navbar_youtubeImg {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+}
+
+.navbar_youtube_image {
+    font-size: 30px;
+    color: red;
+}
+
+.navbar_UtubeTitle {
+    font-size: 20px;
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+
+/* Middle Section */
+.navbar-middle {
+    display: flex;
+    gap: 10px;
+    width: 50%;
+}
+
+.navbar-searchBox {
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+}
+
+.navbar_searchboxInput {
+    width: 100%;
+    height: 38px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid rgb(58, 57, 57);
+    background-color: #121212;
+    color: white;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.serchIconBox {
+    cursor: pointer;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(42, 42, 42);
+    border-radius: 0 20px 20px 0;
+}
+
+.navbar_mic {
+    cursor: pointer;
+    width: 36px;
+    height: 36px;
+    background-color: rgb(42, 42, 42);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Right Section */
+.navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar_right_logo {
+    width: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .navBar {
+        height: 48px;
+    }
+
+    .navbarHamberger {
+        width: 28px;
+        height: 28px;
+    }
+
+    .navbar_youtube_image {
+        font-size: 24px;
+    }
+
+    .navbar_UtubeTitle {
+        font-size: 18px;
+    }
+
+    .navbar_searchboxInput {
+        height: 32px;
+        font-size: 12px;
+    }
+
+
+    .navbar-middle {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar-middle {
+        display: none; /* You can hide the search bar for smaller screens */
+    }
+
+    .navBar {
+        height: 44px;
+        padding: 5px 8px;
+    }
+
+    .navbarHamberger {
+        width: 24px;
+        height: 24px;
+    }
+
+    .navbar_youtube_image {
+        font-size: 22px;
+    }
+
+    .navbar_UtubeTitle {
+        font-size: 16px;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .navBar {
+        height: 40px;
+        padding: 4px 6px;
+    }
+
+    .navbarHamberger {
+        width: 20px;
+        height: 20px;
+    }
+
+    .navbar_youtube_image {
+        font-size: 20px;
+    }
+
+    .navbar_UtubeTitle {
+        font-size: 14px;
+    }
+
+    .navbar-middle {
+        display: none;
+    }
+}

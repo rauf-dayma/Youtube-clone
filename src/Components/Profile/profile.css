@@ -1,0 +1,224 @@
+/* Profile Container */
+.profile {
+  display: flex;
+  width: 100%;
+  padding: 10px 13px;
+  background-color: black;
+  color: white;
+  box-sizing: border-box;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+/* Profile Page Layout */
+.profilePage, .FulllProfilePage {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  color: white;
+  margin-top: 50px;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: flex-start; /* Changed to start for better alignment */
+}
+
+/* Full Profile Page Adjustments */
+.FulllProfilePage {
+  margin-left: 20px;
+}
+
+.profileTopSection {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+  flex-wrap: wrap; /* Responsive adjustment for profile info */
+  align-items: center;
+}
+
+/* Profile Image Section */
+.profileTopSectionProfile {
+  flex: 1;
+  max-width: 150px; /* Limit size for responsiveness */
+  margin-right: 20px;
+}
+
+.profileTopSectionImg {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Profile Information Section */
+.profileTopSectionAbout {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profileTopSectionAbotName {
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.profileTopSectionInfo {
+  font-size: 14px;
+  color: rgb(153, 153, 153);
+}
+
+/* Profile Videos Section */
+.profileVideos {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.profileVideoTitle {
+  font-weight: 400;
+  font-size: 22px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgb(153, 152, 153);
+  text-align: left; /* Changed to align left */
+  color: rgb(207, 207, 207);
+  width: 100%;
+}
+
+/* Responsive Video Layout */
+.profile_videos {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+.profileVideoBlock {
+  width: 100%;
+  max-width: 220px; /* Limit video block size */
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease; /* Add hover effect */
+}
+
+.profileVideoBlock:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.profileVideoBlockThumbnail {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.profileVideoBlockThumbnail-img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover; /* Ensure thumbnails maintain aspect ratio */
+  border-radius: 10px;
+}
+
+.profileVideoBlockDetails {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.profileVideoBlockDetailsName {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.profileVideoBlockDetailsAbout {
+  font-size: 14px;
+  color: #ababab;
+}
+
+/* Responsive Tweaks for Mobile Devices */
+@media (max-width: 768px) {
+  .profilePage, .FulllProfilePage {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .profileTopSection {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profileTopSectionProfile {
+    max-width: 100px; /* Smaller image on mobile */
+  }
+
+  .profileTopSectionAbotName {
+    font-size: 24px;
+  }
+
+  .profileTopSectionInfo {
+    font-size: 12px;
+  }
+
+  .profileVideoBlock {
+    max-width: 180px; /* Smaller video blocks */
+  }
+
+  .profileVideoBlockThumbnail-img {
+    height: 120px; /* Smaller thumbnail height */
+  }
+}
+
+
+/* Container for Edit and Delete buttons inside video block */
+.profileVideoBlockDetailsActions {
+    display: flex;
+    gap: 10px; /* Space between Edit and Delete buttons */
+    margin-top: 8px; /* Space above the buttons */
+  }
+  
+  /* Styling for the Edit button inside video block */
+  .profileVideoBlockDetailsActions a {
+    background-color: #007bff; /* Blue background for Edit */
+    color: white; /* White text */
+    padding: 5px 12px; /* Padding to make it look like a button */
+    text-decoration: none; /* Remove underline from links */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 14px; /* Adjust font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for Edit button */
+  .profileVideoBlockDetailsActions a:hover {
+    background-color: #0056b3; /* Darker blue when hovered */
+  }
+  
+  /* Styling for Delete button inside video block */
+  .profileVideoBlockDetailsActions button {
+    background-color: #dc3545; /* Red background for Delete */
+    color: white; /* White text */
+    padding: 5px 12px; /* Padding to look like a button */
+    border: none; /* Remove default button border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    font-size: 14px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect for Delete button */
+  .profileVideoBlockDetailsActions button:hover {
+    background-color: #c82333; /* Darker red on hover */
+  }
+  
+  /* Adjusting the size and layout for mobile devices */
+  @media screen and (max-width: 768px) {
+    .profileVideoBlockDetailsActions {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      gap: 5px; /* Reduce gap between buttons */
+    }
+  
+    .profileVideoBlockDetailsActions a,
+    .profileVideoBlockDetailsActions button {
+      font-size: 12px; /* Smaller text on mobile devices */
+      padding: 4px 10px; /* Smaller padding for mobile */
+    }
+  }
+  

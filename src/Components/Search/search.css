@@ -1,0 +1,93 @@
+/* General styling for the search page */
+.searchPage {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  padding: 20px;
+  color: #fff; /* White text for contrast */
+  background-color: #181818; /* YouTube-like background */
+}
+
+/* Search results container */
+.searchResult {
+  display: flex;
+  width: 100%;
+  max-width: 1000px; /* More consistent max width */
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  align-items: flex-start; /* Align items to the top */
+}
+
+/* Thumbnail styling */
+.searchThumbnail {
+  width: 460px; /* Optimal width for large screens */
+  height: 300px;
+  margin-right: 20px;
+  border-radius: 4px; /* Slight rounding for a modern look */
+}
+
+/* Search info container */
+.searchInfo {
+  flex-grow: 1; /* Take the remaining space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Align vertically */
+}
+
+/* Title styling */
+.searchInfo h1 {
+  font-size: 18px; /* Adjust font size for YouTube-like look */
+  color: #fff; /* White for better contrast */
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+/* Channel name and likes */
+.searchInfo p {
+  color: #aaa; /* Light gray for secondary information */
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .searchResult {
+    flex-direction: column; /* Stack the elements on smaller screens */
+    align-items: center;
+  }
+
+  .searchThumbnail {
+    width: 100%; /* Full width thumbnail on smaller devices */
+    max-width: 100%; /* Ensure it doesn't overflow */
+    margin-right: 0;
+    margin-bottom: 10px; /* Add spacing between the thumbnail and text */
+  }
+
+  .searchInfo {
+    align-items: center; /* Center the text for smaller screens */
+    text-align: center; /* Center-align the text */
+  }
+
+  .searchInfo h1 {
+    font-size: 16px; /* Smaller title on small screens */
+  }
+
+  .searchInfo p {
+    font-size: 12px; /* Smaller secondary text */
+  }
+}
+
+/* Extra responsiveness for very small devices (mobile) */
+@media (max-width: 480px) {
+  .searchThumbnail {
+    width: 100%; /* Full width for tiny screens */
+  }
+
+  .searchInfo h1 {
+    font-size: 14px; /* Further reduction in text size */
+  }
+
+  .searchInfo p {
+    font-size: 10px; /* Further reduction in secondary text */
+  }
+}
