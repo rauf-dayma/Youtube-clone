@@ -26,23 +26,7 @@ app.listen(2100, () => {
   console.log("Server is running on port 2100");
 });
 
-app.get("/search", async (req, res) => {
-  try {
-    const query = req.query.q;
-    if (!query) {
-      return res.status(400).json({ message: "No search query provided" });
-    }
 
-    // Case-insensitive search for titles matching the query
-    const videos = await Video.find({
-      title: { $regex: query, $options: "i" },
-    }).limit(10);
-
-    res.json({ videos });
-  } catch (err) {
-    res.status(500).json({ message: "Error fetching search results", error: err.message });
-  }
-});
 
 uploadVideoRoute(app)
 authRoute(app)
