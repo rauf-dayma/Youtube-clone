@@ -56,7 +56,7 @@ The backend is built with **Node.js** and **Express**, and it provides a RESTful
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-repo/Youtube-clone.git
+    git clone https://github.com/rauf-dayma/Youtube-clone.git
     ```
 2. Navigate to the backend directory:
     ```bash
