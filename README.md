@@ -41,6 +41,79 @@ CSS (for styling)
 
 ---
 
+## Tech Stack
+
+### Frontend
+- **React**: For building dynamic UI components.
+- **Redux**: State management to handle cart and user data.
+- **HTML5, CSS3**: Responsive design and styling.
+- **JavaScript (ES6)**: Logic implementation and DOM manipulation.
+- **React Router**: For navigation across pages.
+- **Fetch API**: For making API requests to the backend.
+
+### Backend
+- **Node.js**: Backend environment.
+- **Express.js**: Web framework for creating RESTful APIs.
+- **MongoDB**: NoSQL database for storing products, users, and orders.
+- **Mongoose**: ODM (Object Data Modeling) library for MongoDB.
+- **JWT (JSON Web Tokens)**: For user authentication and authorization.
+
+---
+
+## Project Structure
+
+
+---
+
+## Installation and Setup
+
+### Prerequisites
+- **Node.js**
+- **MongoDB**
+- **Git**
+
+### Backend Setup
+
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/rauf-dayma/Youtube-clone.git
+    ```
+2. Navigate to the backend directory:
+    ```bash
+    cd backend
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Set up environment variables: Create a `.env` file in the backend directory and add the following variables:
+    ```
+    MONGO_URI=your-mongodb-uri
+    JWT_SECRET=your-secret-key
+    PORT=5000
+    ```
+5. Start the backend server:
+    ```bash
+    npm start
+    ```
+
+### Frontend Setup
+
+1. Navigate to the frontend directory:
+    ```bash
+    cd frontend
+    ```
+2. Install frontend dependencies:
+    ```bash
+    npm install
+    ```
+3. Run the React app:
+    ```bash
+    npm start
+    ```
+
+---
+
 ## API Endpoints
 
 ### Authentication
